@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F860A1632F71AFEA00FF6509 /* HuggingFaceFS.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F860A1592F71AFEA00FF6509 /* HuggingFaceFS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F860A1612F71AFEA00FF6509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F860A13F2F71AFBF00FF6509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F860A1582F71AFEA00FF6509;
+			remoteInfo = HuggingFaceFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F860A1682F71AFEA00FF6509 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				F860A1632F71AFEA00FF6509 /* HuggingFaceFS.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F860A1472F71AFBF00FF6509 /* HuggingFaceMount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuggingFaceMount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860A1592F71AFEA00FF6509 /* HuggingFaceFS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = HuggingFaceFS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F860A1642F71AFEA00FF6509 /* Exceptions for "HuggingFaceFS" folder in "HuggingFaceFS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F860A1582F71AFEA00FF6509 /* HuggingFaceFS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F860A1492F71AFBF00FF6509 /* HuggingFaceMount */ = {
@@ -16,10 +55,25 @@
 			path = HuggingFaceMount;
 			sourceTree = "<group>";
 		};
+		F860A15A2F71AFEA00FF6509 /* HuggingFaceFS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F860A1642F71AFEA00FF6509 /* Exceptions for "HuggingFaceFS" folder in "HuggingFaceFS" target */,
+			);
+			path = HuggingFaceFS;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F860A1442F71AFBF00FF6509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860A1562F71AFEA00FF6509 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F860A1492F71AFBF00FF6509 /* HuggingFaceMount */,
+				F860A15A2F71AFEA00FF6509 /* HuggingFaceFS */,
 				F860A1482F71AFBF00FF6509 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F860A1472F71AFBF00FF6509 /* HuggingFaceMount.app */,
+				F860A1592F71AFEA00FF6509 /* HuggingFaceFS.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				F860A1432F71AFBF00FF6509 /* Sources */,
 				F860A1442F71AFBF00FF6509 /* Frameworks */,
 				F860A1452F71AFBF00FF6509 /* Resources */,
+				F860A1682F71AFEA00FF6509 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F860A1622F71AFEA00FF6509 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F860A1492F71AFBF00FF6509 /* HuggingFaceMount */,
@@ -69,6 +127,28 @@
 			productName = HuggingFaceMount;
 			productReference = F860A1472F71AFBF00FF6509 /* HuggingFaceMount.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F860A1582F71AFEA00FF6509 /* HuggingFaceFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860A1652F71AFEA00FF6509 /* Build configuration list for PBXNativeTarget "HuggingFaceFS" */;
+			buildPhases = (
+				F860A1552F71AFEA00FF6509 /* Sources */,
+				F860A1562F71AFEA00FF6509 /* Frameworks */,
+				F860A1572F71AFEA00FF6509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F860A15A2F71AFEA00FF6509 /* HuggingFaceFS */,
+			);
+			name = HuggingFaceFS;
+			packageProductDependencies = (
+			);
+			productName = HuggingFaceFS;
+			productReference = F860A1592F71AFEA00FF6509 /* HuggingFaceFS.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					F860A1462F71AFBF00FF6509 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F860A1582F71AFEA00FF6509 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				F860A1462F71AFBF00FF6509 /* HuggingFaceMount */,
+				F860A1582F71AFEA00FF6509 /* HuggingFaceFS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F860A1452F71AFBF00FF6509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860A1572F71AFEA00FF6509 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F860A1552F71AFEA00FF6509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F860A1622F71AFEA00FF6509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F860A1582F71AFEA00FF6509 /* HuggingFaceFS */;
+			targetProxy = F860A1612F71AFEA00FF6509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F860A1502F71AFC000FF6509 /* Debug */ = {
@@ -309,6 +415,66 @@
 			};
 			name = Release;
 		};
+		F860A1662F71AFEA00FF6509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTY35UM57S;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HuggingFaceFS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HuggingFaceFS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.dododo.HuggingFaceMount.HuggingFaceFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F860A1672F71AFEA00FF6509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTY35UM57S;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HuggingFaceFS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HuggingFaceFS;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.dododo.HuggingFaceMount.HuggingFaceFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +492,15 @@
 			buildConfigurations = (
 				F860A1532F71AFC000FF6509 /* Debug */,
 				F860A1542F71AFC000FF6509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860A1652F71AFEA00FF6509 /* Build configuration list for PBXNativeTarget "HuggingFaceFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860A1662F71AFEA00FF6509 /* Debug */,
+				F860A1672F71AFEA00FF6509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
