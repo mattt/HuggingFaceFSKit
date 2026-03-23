@@ -28,23 +28,28 @@
 			<key>HuggingFaceFSPersonality</key>
 			<dict>
 				<key>FSName</key>
-				<string>HuggingFaceFSName</string>
-				<key>FSfileObjectsAreCaseSensitive</key>
+				<string>hfmount</string>
+				<key>FSFileObjectsAreCaseSensitive</key>
 				<false/>
 			</dict>
 		</dict>
 		<key>FSRequiresSecurityScopedPathURLResources</key>
 		<false/>
+		<key>FSSupportedSchemes</key>
+		<array>
+			<string>https</string>
+			<string>http</string>
+		</array>
 		<key>FSShortName</key>
-		<string>HuggingFaceFSshortname</string>
+		<string>hfmount</string>
 		<key>FSSupportsBlockResources</key>
 		<false/>
 		<key>FSSupportsGenericURLResources</key>
-		<false/>
+		<true/>
 		<key>FSSupportsPathURLs</key>
 		<false/>
 		<key>FSSupportsServerURLs</key>
-		<false/>
+		<true/>
 	</dict>
 </dict>
 </plist>
